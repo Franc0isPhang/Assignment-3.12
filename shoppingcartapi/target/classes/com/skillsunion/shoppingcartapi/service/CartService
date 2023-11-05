@@ -1,0 +1,21 @@
+package com.skillsunion.shoppingcartapi.service;
+
+import java.util.List;
+
+import com.skillsunion.shoppingcartapi.entity.Cart;
+
+
+public interface CartService {
+  Cart createCart(Cart Cart);
+
+  Cart getCart(Long id);
+
+  List<Cart> getAllCarts();
+
+  Cart updateCart(Long id, Cart Cart);
+
+  void deleteCart(Long id);
+  
+  List<Cart> searchCarts(String firstName);
+
+}
